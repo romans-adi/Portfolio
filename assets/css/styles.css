@@ -57,7 +57,7 @@ header {
   margin-bottom: 2rem;
 }
 
-.x {
+.card-wrapper {
   min-width: 327px;
   max-width: 369px;
 }
@@ -70,7 +70,8 @@ header {
 }
 
 .tool {
-  padding: 1rem;
+  background-color: #EBF0EE;
+  padding: 0.5rem;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;

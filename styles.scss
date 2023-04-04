@@ -16,7 +16,7 @@ font-style: normal;
 $color-blue: #172B4D;
 $color-green: #36b37e;
 $color-blue-light: #344563;
-
+$color-gray: #EBF0EE;
 
 .blue {
   color: $color-blue;
@@ -65,7 +65,8 @@ header {
 .card {
   margin-bottom: 2rem;
 }
-.x {
+
+.card-wrapper {
  min-width: 327px;
  max-width: 369px;
 }
@@ -78,7 +79,8 @@ font-size: 24px;
 }
 
 .tool {
-  padding: 1rem;
+  background-color: $color-gray;
+  padding: 0.5rem;
   font-weight: 600;
 font-size: 12px;
 line-height: 16px;

@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
 font-style: normal;
 }
 
@@ -33,7 +33,9 @@ $color-gray: #EBF0EE;
 .blue-bg {
   background-color: $color-blue;
 }
-
+.gray-bg {
+  background-color: $color-gray;
+}
 .top-20 {
   top: 20%;
 }
@@ -41,6 +43,15 @@ $color-gray: #EBF0EE;
 .fw-semibold {
   font-weight: 600;
 }
+.w-85 {
+  width: 85%;
+}
+
+.btn-success {
+  font-weight: 500;
+  padding: 0.75rem;
+}
+
 
 /* HEADER */
 
@@ -67,7 +78,7 @@ header {
 }
 
 .card-wrapper {
- min-width: 327px;
+ min-width: 368px;
  max-width: 369px;
 }
 
@@ -84,4 +95,12 @@ font-size: 24px;
   font-weight: 600;
 font-size: 12px;
 line-height: 16px;
+}
+
+/* ABOUT */
+ 
+.icon-elipse {
+ width: 5rem;
+ height: 5rem;
+ padding: 1rem;
 }

@@ -49,8 +49,15 @@ body {
 }
 
 /* HEADER */
+.nav-item:focus, .nav-item:active {
+  background-color: #172B4D;
+}
+
 .nav-link {
   color: #344563;
+}
+.nav-link.active {
+  color: #36b37e;
 }
 
 header {

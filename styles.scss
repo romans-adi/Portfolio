@@ -55,8 +55,15 @@ $color-gray: #EBF0EE;
 
 /* HEADER */
 
+.nav-item:focus, .nav-item:active {
+  background-color: $color-blue;
+}
+
 .nav-link {
   color: $color-blue-light;
+  &.active {
+    color: $color-green;
+  }
 }
 
 header {
@@ -99,7 +106,7 @@ line-height: 16px;
 }
 
 /* ABOUT */
- 
+
 .icon-elipse {
  width: 5rem;
  height: 5rem;

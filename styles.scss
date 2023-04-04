@@ -65,6 +65,10 @@ header {
 .card {
   margin-bottom: 2rem;
 }
+.x {
+ min-width: 327px;
+ max-width: 369px;
+}
 
 .card-title {
   color: $color-blue;

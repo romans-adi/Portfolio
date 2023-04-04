@@ -57,6 +57,11 @@ header {
   margin-bottom: 2rem;
 }
 
+.x {
+  min-width: 327px;
+  max-width: 369px;
+}
+
 .card-title {
   color: #172B4D;
   font-family: "Poppins", sans-serif;

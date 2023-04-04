@@ -1,5 +1,39 @@
 /* COMMON */
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.blue {
+  color: #172B4D;
+}
+
+.green {
+  color: #36b37e;
+}
+
+.green-bg {
+  background-color: #36b37e;
+}
+
+.blue-bg {
+  background-color: #172B4D;
+}
+
+.top-20 {
+  top: 20%;
+}
+
 /* HEADER */
 .nav-link {
+  color: #172B4D;
+}
+
+header {
+  background: top/cover no-repeat url("../img/header-bg-desktop.png");
+}
+
+.heading {
   color: #172B4D;
 }

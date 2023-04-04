@@ -10,23 +10,51 @@
     <title>Portfolio</title>
   </head>
 <body>
-  <nav>
-  <ul class="nav justify-content-center">
+  <nav id="nav" class="fixed-top">
+  <ul class="nav justify-content-center fw-semibold">
     <li class="nav-item">
-      <a class="nav-link" href="#">Portfolio</a>
+      <a class="nav-link" href="#works">Portfolio</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">About</a>
+      <a class="nav-link" href="#about">About</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Contact</a>
+      <a class="nav-link" href="#contact">Contact</a>
     </li>
   </ul>
 </nav>
-<header>
-  <heading></heading>
+<header class="col d-flex flex-column justify-content-center align-items-center vh-100 text-center pb-10 position-relative">
+  <div class="container position-absolute top-20 w-50">
+  <div class="heading d-flex flex-column align-items-center">
+    <h1 class=""><span class="blue">Hey there.<br> I’m Romans.</span><br>
+      <span class="green">I’m a software developer</span>
+    </h1>
+    <p class="supporting-text blue"> I can help you build a product , feature or website Look through some of my
+      work and experience! If you like what you see and have a project you need coded,<br>
+      don’t hesitate to contact me.</p>
+    <div class="social social-header">
+      <ul class="d-flex flex-row gap-4 me-4">
+        <li class="social-icon">
+          <a href="#"><img src="assets/img/icons/twitter.svg" alt="Twitter"></a>
+        </li>
+        <li class="social-icon">
+          <a href="#"><img src="assets/img/icons/Linkedin icon.svg" alt="LinkedIn"></a>
+        </li>
+        <li class="social-icon">
+          <a href="#"><img src="assets/img/icons/medium.svg" alt="Medium"></a>
+        </li>
+        <li class="social-icon">
+          <a href="#"><img src="assets/img/icons/github.svg" alt="GitHub"></a>
+        </li>
+        <li class="social-icon">
+          <a href="#"><img src="assets/img/icons/angellist.svg" alt="Angellist"></a>
+        </li>
+      </ul>
+</div>
+</div>
+</div>
 </header>
-<main>
+<main data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="0" class="scrollspy-example" tabindex="0">
   <section id="works"></section>
   <section id="about"></section>
   <section id="contact"></section>

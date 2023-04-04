@@ -1,9 +1,50 @@
 /* COMMON */
 
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 $color-blue: #172B4D;
+$color-green: #36b37e;
+$color-blue-light: #344563;
+
+
+.blue {
+  color: $color-blue;
+}
+
+.green {
+  color: $color-green;
+}
+
+.green-bg {
+  background-color: $color-green;
+}
+
+.blue-bg {
+  background-color: $color-blue;
+}
+
+.top-20 {
+  top: 20%;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
 
 /* HEADER */
 
 .nav-link {
+  color: $color-blue-ligth;
+}
+
+header {
+  background: top / cover no-repeat url("../img/header-bg-desktop.png");
+}
+
+.heading {
   color: $color-blue;
 }

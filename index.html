@@ -182,12 +182,11 @@
     <section id="about">
       <div class="container align-items-center justify-content-center d-flex flex-column">
         <h2 class="text-capitalize text-center fw-bold my-2 pt-5 blue">about me</h2>
-        <p class="supporting-text blue text-center mb-3 w-50"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+        <p class="supporting-text blue text-center mb-3 w-50"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
         don’t hesitate to contact me.</p>
         <a href="#" class="btn btn-success">Get my Resume</a>
-      </div>
       <div class="row align-items-stretch justify-content-center text-center mb-3 mt-5 ">
-        <div class="card-wrapper col">
+        <div class="card-wrapper col mb-4">
           <div class="card position-relative border gray-bg d-flex justify-content-center align-items-center h-100">
             <div class="icon-elipse bg-white border-50 mt-5 ">
               <img src="assets/img/icon-language.png" class="card-img-top" alt="...">
@@ -196,17 +195,17 @@
               <div class="col align-items-center">
                 <h3 class="card-title">Languages</h3>
                 <div class="d-flex justify-content-center align-items-center row mt-5 mb-2 gap-2 ps-0">
-                  <div class="tool col-5 bg-white rounded green py-2">JavaScriptdiv</div>
+                  <div class="tool col-5 bg-white rounded green py-2">JavaScript</div>
                   <div class="tool col-2 bg-white rounded green py-2">Ruby</div>
                   <div class="tool col-2 bg-white rounded green py-2">HTML</div>
                   <div class="tool col-2 bg-white rounded green py-2">CSS</div>
-                
+
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="card-wrapper col">
+        <div class="card-wrapper col mb-4">
           <div class="card position-relative border gray-bg d-flex justify-content-center align-items-center h-100">
             <div class="icon-elipse bg-white border-50 mt-5 ">
               <img src="assets/img/icon-frameworks.png" class="card-img-top" alt="...">
@@ -224,7 +223,7 @@
             </div>
           </div>
         </div>
-        <div class="card-wrapper col">
+        <div class="card-wrapper col mb-4">
           <div class="card position-relative border gray-bg d-flex justify-content-center align-items-center h-100">
             <div class="icon-elipse bg-white border-50 mt-5 ">
               <img src="assets/img/icon-skills.png" class="card-img-top" alt="...">
@@ -244,11 +243,50 @@
           </div>
         </div>
       </div>
-      
+      </div>
     </section>
-    <section id="contact"></section>
+    <section id="contact" class="my-5 p-5">
+      <div class="container d-flex justify-content-center align-items-center">
+        <h2 class="text-capitalize text-center fw-bold my-2 pt-5 blue align-self-start col-6">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+      <form class="col-6 flex-end align-self-end" action="https://formspree.io/f/xyyadldd"
+      method="POST">
+        <div class="mb-3">
+          <input type="text" name="fullname" aria-label="Full Name" class="form-control" id="fullname" placeholder="Full name" required maxlength="30">
+        </div>
+        <div class="mb-3">
+          <input type="email" name="email" class="form-control" id="email" aria-label="Email" placeholder="Email" required>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" name="message" placeholder="Hey I’d like to connect to..." id="message" aria-label="Message" style="height: 100px" required maxlength="500"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Get in Touch</button>
+      </form>
+    </div>
+    </section>
   </main>
-  <footer></footer>
+  <div class="container-fluid">
+  <footer class="d-flex flex-wrap align-items-center py-3 my-4 border-top justify-content-center">
+    <div class="social social-header">
+      <ul class="d-flex flex-row gap-4 me-4">
+        <li class="social-icon">
+          <a href="#"><img src="assets/img/icons/twitter.svg" alt="Twitter"></a>
+        </li>
+        <li class="social-icon">
+          <a href="#"><img src="assets/img/icons/Linkedin icon.svg" alt="LinkedIn"></a>
+        </li>
+        <li class="social-icon">
+          <a href="#"><img src="assets/img/icons/medium.svg" alt="Medium"></a>
+        </li>
+        <li class="social-icon">
+          <a href="#"><img src="assets/img/icons/github.svg" alt="GitHub"></a>
+        </li>
+        <li class="social-icon">
+          <a href="#"><img src="assets/img/icons/angellist.svg" alt="Angellist"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</div>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 

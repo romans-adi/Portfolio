@@ -25,9 +25,13 @@
   top: 20%;
 }
 
+.fw-semibold {
+  font-weight: 600;
+}
+
 /* HEADER */
 .nav-link {
-  color: #172B4D;
+  color: #344563;
 }
 
 header {
@@ -37,3 +41,5 @@ header {
 .heading {
   color: #172B4D;
 }
+
+/* WORKS */

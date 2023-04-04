@@ -73,6 +73,7 @@ header {
 .card-wrapper {
   min-width: 368px;
   max-width: 369px;
+  min-height: 316px;
 }
 
 .card-title {

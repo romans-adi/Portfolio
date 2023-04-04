@@ -1,3 +1,9 @@
-body {
-  height: 100%;
+/* COMMON */
+
+$color-blue: #172B4D;
+
+/* HEADER */
+
+.nav-link {
+  color: $color-blue;
 }

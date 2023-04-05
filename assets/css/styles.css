@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
-/* COMMON */
+/* LAYOUT */
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +11,7 @@ body {
   font-style: normal;
 }
 
+/*COLORS */
 .blue {
   color: #172B4D;
 }
@@ -31,25 +32,42 @@ body {
   background-color: #EBF0EE;
 }
 
-.top-20 {
-  top: 20%;
-}
-
-.fw-semibold {
-  font-weight: 600;
+/* WIDTH */
+.w-60 {
+  width: 60%;
 }
 
 .w-85 {
   width: 85%;
 }
 
+.w-90 {
+  width: 90%;
+}
+
+.top-20 {
+  top: 20%;
+}
+
+/* FONT */
+.fw-semibold {
+  font-weight: 600;
+}
+
+/* BUTTONS */
 .btn-success {
   font-weight: 500;
   padding: 0.75rem;
 }
 
+/* BORDERS */
+.border-50 {
+  border-radius: 50%;
+}
+
 /* HEADER */
-.nav-item:focus, .nav-item:active {
+.nav-item:focus,
+.nav-item:active {
   background-color: #172B4D;
 }
 
@@ -67,20 +85,25 @@ header {
 .heading {
   color: #172B4D;
 }
-
-/* WORKS */
-.border-50 {
-  border-radius: 50%;
+.heading h1 {
+  font-size: 48px;
+  line-height: 125%;
+  letter-spacing: 0.37px;
+}
+.heading .supporting-text {
+  font-size: 20px;
+  line-height: 160%;
 }
 
-.card {
+/* CARDS */
+.project-card {
   margin-bottom: 2rem;
+  width: 397px;
+  height: 474px;
 }
 
-.card-wrapper {
-  min-width: 368px;
-  max-width: 369px;
-  min-height: 316px;
+.about-card {
+  width: 369px;
 }
 
 .card-title {
@@ -91,10 +114,22 @@ header {
 }
 
 .tool {
-  padding: 0.5rem;
+  width: 100%;
+  flex: 0;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
+}
+
+/* WORKS */
+#works h2::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  max-width: 70%;
+  border-top: 0.25rem solid #36b37e;
+  border-radius: 1.5rem;
+  margin: 1.5rem auto 0;
 }
 
 /* ABOUT */

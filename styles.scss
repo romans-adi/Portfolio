@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+/* FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
 /* LAYOUT */
 
@@ -9,16 +11,16 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
 }
 
-/*COLORS */
+/* COLORS */
 
-$color-blue: #172B4D;
+$color-blue: #172b4d;
 $color-green: #36b37e;
 $color-blue-light: #344563;
-$color-gray: #EBF0EE;
+$color-gray: #ebf0ee;
 
 .blue {
   color: $color-blue;
@@ -50,7 +52,7 @@ $color-gray: #EBF0EE;
   width: 85%;
 }
 
-/* FONT */
+/* FONTS */
 
 .fw-semibold {
   font-weight: 600;
@@ -61,6 +63,62 @@ $color-gray: #EBF0EE;
 .btn-success {
   font-weight: 500;
   padding: 0.75rem;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.project-link {
+  display: none;
+}
+
+.btn-modal {
+  font-size: 15px;
+  line-height: 133%;
+  min-width: 115px;
+  height: 48px;
+}
+
+.live::after {
+  content: "";
+  position: absolute;
+  right: 5%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/icons/icon-elipse-arrow.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.source::after {
+  content: "";
+  position: absolute;
+  right: 5%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/icons/icon-github.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+/* MODAL */
+
+.modal-dialog {
+  left: 480px;
+}
+
+.modal-content {
+  width: 920px;
+}
+
+.heading-modal {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
 }
 
 /* BORDERS */
@@ -122,7 +180,7 @@ header {
 
 .card-title {
   color: $color-blue;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 24px;
 }
@@ -137,7 +195,7 @@ header {
 
 /* WORKS */
 
-#works h2::after {
+.works-heading::after {
   content: "";
   display: block;
   width: 3rem;
@@ -177,7 +235,6 @@ header {
   height: 5rem;
   padding: 1rem;
 }
-
 
 /* CONTACT */
 
@@ -267,31 +324,118 @@ textarea:required:focus:valid {
   box-shadow: 0 0 0.625rem #36b37e;
 }
 
+/* FOOTER */
+
+footer {
+  border-top: 1px solid $color-gray;
+}
 
 /* MEDIA */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 10%;
+    min-height: 3.125rem;
+  }
+
+  .burger-lines {
+    height: 0.75rem;
+    width: 1rem;
+    position: absolute;
+    top: 8%;
+    right: 9%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .burger-line {
+    display: block;
+    height: 0.125rem;
+    width: 100%;
+    border-radius: 0.625rem;
+    background: #333;
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  #toggle:checked + .burger .burger-btn .burger-lines {
+    margin-top: 0.6%;
+  }
+
+  .burger:hover .burger-line {
+    cursor: pointer;
+  }
+
+  #toggle:checked + .burger .line-0 {
+    transform: rotate(45deg);
+    transition: transform 0.2s ease-in-out;
+    height: 0.125rem;
+    background: #333;
+  }
+
+  #toggle:checked + .burger .line-1 {
+    transform: scaleY(0);
+    transition: transform 0.1s ease-in-out;
+  }
+
+  #toggle:checked + .burger .line-2 {
+    margin-bottom: 70%;
+    transform: rotate(-45deg);
+    transition: transform 0.2s ease-in-out;
+    background: #333;
+  }
+
   .heading {
     margin-top: 40%;
+
     h1 {
-  font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 130%;
-}
-}
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 130%;
+    }
+  }
 
-#contact .container::after, .contact-form-img, #contact .container form::before  {
-  display: none;
-}
+  #contact .container::after,
+  .contact-form-img,
+  #contact .container form::before,
+  .open-modal {
+    display: none;
+  }
 
-#contact::before {
-  content: "";
-  position: absolute;
-  display: flex;
-  background: url(../img/contact-form-bg.png) no-repeat bottom right;
-  width: 14%;
-  height: 25%;
-  right: 0;
-}
-}
+  #contact::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    background: url(../img/contact-form-bg.png) no-repeat bottom right;
+    width: 14%;
+    height: 25%;
+    right: 0;
+  }
 
+  .project-link {
+    display: block;
+  }
+
+  footer {
+    border-top: none;
+  }
+
+  footer::after {
+    content: "";
+    display: block;
+    width: 30%;
+    border-top: 0.4rem solid #000;
+    border-radius: 1.5rem;
+    margin: 5% auto 2%;
+  }
+}

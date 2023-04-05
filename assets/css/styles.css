@@ -73,9 +73,13 @@ body {
 
 .nav-link {
   color: #344563;
+  transition: all 1s ease-in;
 }
 .nav-link.active {
-  color: #36b37e;
+  color: #fff;
+  background-color: #172B4D;
+  border-radius: 5%;
+  margin-top: 0.75rem;
 }
 
 header {

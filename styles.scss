@@ -86,9 +86,13 @@ $color-gray: #EBF0EE;
 
 .nav-link {
   color: $color-blue-light;
+  transition: all 1s ease-in;
 
   &.active {
-    color: $color-green;
+    color: #fff;
+    background-color: $color-blue;
+    border-radius: 5%;
+    margin-top: 0.75rem;
   }
 }
 

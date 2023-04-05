@@ -50,10 +50,6 @@ $color-gray: #EBF0EE;
   width: 85%;
 }
 
-.w-90 {
-  width: 90%;
-}
-
 /* FONT */
 
 .fw-semibold {
@@ -283,4 +279,19 @@ textarea:required:focus:valid {
   line-height: 130%;
 }
 }
+
+#contact .container::after, .contact-form-img, #contact .container form::before  {
+  display: none;
 }
+
+#contact::before {
+  content: "";
+  position: absolute;
+  display: flex;
+  background: url(../img/contact-form-bg.png) no-repeat bottom right;
+  width: 14%;
+  height: 25%;
+  right: 0;
+}
+}
+

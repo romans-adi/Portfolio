@@ -306,23 +306,17 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="my-5 p-5">
-      <div class="container d-flex justify-content-center align-items-center w-90">
-        <h2 class="text-capitalize text-center fw-bold my-2 pt-5 blue align-self-start col-6">I'm always interested in
+    <section id="contact" class="my-5 p-5 d-flex flex-column justify-content-center align-items-center">
+      <div class="container row justify-content-center align-items-center">
+        <h2 class="text-capitalize text-center fw-bold my-3 py-3 blue align-self-start col-md-6 col">I'm always interested in
           hearing about new projects, so if you'd like to chat please get in touch.</h2>
-        <form class="col-6 flex-end align-self-end ps-5" action="https://formspree.io/f/xyyadldd" method="POST">
-          <div class="mb-3">
-            <input type="text" name="fullname" aria-label="Full Name" class="form-control" id="fullname"
+        <form class="col-md-5 flex-end align-self-end ps-5 d-flex d-md-block flex-column align-items-center" action="https://formspree.io/f/xyyadldd" method="POST">
+            <input type="text" name="fullname" aria-label="Full Name" class="form-control mb-3" id="fullname"
               placeholder="Full name" required maxlength="30">
-          </div>
-          <div class="mb-3">
-            <input type="email" name="email" class="form-control" id="email" aria-label="Email" placeholder="Email"
+            <input type="email" name="email" class="form-control mb-3" id="email" aria-label="Email" placeholder="Email"
               required>
-          </div>
-          <div class="mb-3">
-            <textarea class="form-control" name="message" placeholder="Hey I’d like to connect to..." id="message"
+            <textarea class="form-control mb-3" name="message" placeholder="Hey I’d like to connect to..." id="message"
               aria-label="Message" style="height: 100px" required maxlength="500"></textarea>
-          </div>
           <button type="submit" class="btn btn-success">Get in Touch</button>
         </form>
       </div>
@@ -330,7 +324,7 @@
     </section>
   </main>
   <div class="container-fluid">
-    <footer class="d-flex flex-wrap align-items-center py-3 my-4 border-top justify-content-center">
+    <footer id="footer" class="d-flex flex-wrap align-items-center py-3 my-4 border-top justify-content-center">
       <div class="social social-header">
         <ul class="d-flex flex-row gap-4 me-4">
           <li class="social-icon">

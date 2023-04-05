@@ -54,8 +54,10 @@ $color-gray: #EBF0EE;
   width: 90%;
 }
 
-.top-20 {
-  top: 20%;
+/* MARGINS */
+
+.mtn-5 {
+  margin-top: -5%;
 }
 
 /* FONT */
@@ -97,7 +99,7 @@ $color-gray: #EBF0EE;
 }
 
 header {
-  background: top / cover no-repeat url("../img/header-bg-desktop.png");
+  background: top center / cover no-repeat url("../img/header-bg-desktop.png");
 }
 
 .heading {

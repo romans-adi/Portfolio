@@ -137,8 +137,58 @@ header {
 }
 
 /* ABOUT */
+#about .container h2::before {
+  content: "";
+  background: url(../img/about-me-vector-right.png) no-repeat top right;
+  position: absolute;
+  display: flex;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#about .container p::before {
+  content: "";
+  background: url(../img/about-me-vector-left.png) no-repeat top left;
+  position: absolute;
+  display: flex;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  margin-top: 5%;
+}
+
 .icon-elipse {
   width: 5rem;
   height: 5rem;
   padding: 1rem;
+}
+
+/* CONTACT */
+#contact .container form::before {
+  content: "";
+  background: url(../img/contact-form-bg-desktop.png) no-repeat center right;
+  position: absolute;
+  display: flex;
+  right: 0;
+  height: 60%;
+  width: 15%;
+}
+
+#contact .container::after {
+  content: "";
+  background: url(../img/contact-form-bg-desktop-1.png) no-repeat bottom left;
+  left: 0;
+  height: 100%;
+  width: 10%;
+  display: flex;
+  position: absolute;
+}
+
+.contact-form-img {
+  display: block;
+  margin-left: 20%;
+  transform: scale(0.5);
 }

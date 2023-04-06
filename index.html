@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="This is Romans' portfolio page made with a Bootstrap.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <nav id="nav" class="fixed-top">
+    <input id="toggle" type="checkbox"></input>
+    <label for="toggle" class="burger">
+      <div class="burger-btn">
+        <div class="burger-lines">
+          <span class="burger-line line-0"></span>
+          <span class="burger-line line-1"></span>
+          <span class="burger-line line-2"></span>
+        </div>
+      </div>
+    </label>
+    <ul class="nav desktop-nav justify-content-center fw-semibold">
+      <li class="nav-item">
+        <a class="nav-link" href="#works">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <header class="col d-flex flex-column justify-content-center align-items-center vh-100 text-center pb-5">
+    <div class="container col col-md-6">
+      <div class="heading d-flex flex-column align-items-center">
+        <h1 class="fw-bolder"><span class="blue">Hey there.<br> I’m Romans.</span><br>
+          <span class="green">I’m a software developer</span>
+        </h1>
+        <p class="supporting-text blue"> I can help you build a product , feature or website Look through some of my
+          work and experience! If you like what you see and have a project you need coded,<br>
+          don’t hesitate to contact me.</p>
+        <div class="social social-header">
+          <ul class="d-flex flex-row gap-4 me-4">
+            <li class="social-icon">
+              <a href="#"><img src="assets/img/icons/twitter.svg" alt="Twitter"></a>
+            </li>
+            <li class="social-icon">
+              <a href="#"><img src="assets/img/icons/Linkedin icon.svg" alt="LinkedIn"></a>
+            </li>
+            <li class="social-icon">
+              <a href="#"><img src="assets/img/icons/medium.svg" alt="Medium"></a>
+            </li>
+            <li class="social-icon">
+              <a href="#"><img src="assets/img/icons/github.svg" alt="GitHub"></a>
+            </li>
+            <li class="social-icon">
+              <a href="#"><img src="assets/img/icons/angellist.svg" alt="Angellist"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    <section id="works" class="mt-5 mb-5">
+      <div class="container d-flex flex-column">
+        <h2 class="works-heading text-capitalize text-center fw-bold mb-5 pt-5 blue">my recent works</h2>
+        <div class="row align-items-center justify-content-center text-center mb-3">
+          <div
+            class="card-wrapper d-flex flex-column align-items-center justify-content-center col col-sm-6 col-md-5 col-lg-4 mx-sm-2 mx-xl-5 col-xl-3 mb-5">
+            <div class="card project-card position-relative border border-50">
+              <img src="assets/img/img-placeholder.png" class="card-img-top h-100" alt="...">
+              <div class="card-body position-absolute bottom-0 bg-white border border-top-0 rounded lh-base w-100">
+                <div class="col align-items-center d-flex flex-column">
+                  <h3 class="card-title px-4">Multi-Post Stories Gain+Glory</h3>
+                  <div class="row mt-4 my-4">
+                    <ul class="d-flex row gap-2 my-2 justify-content-center">
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        Ruby on Rails</li>
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        CSS</li>
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        JavaScript</li>
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        HTML</li>
+                    </ul>
+                  </div>
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#project-0"
+                    class="btn btn-success open-modal">See project</button>
+                  <button type="button" href="#" class="btn btn-success project-link">See project</button>
+                  <div class="modal fade" id="project-0" tabindex="-1" aria-labelledby="Project 1" aria-hidden="true">
+                    <div class="modal-dialog position-absolute">
+                      <div class="modal-content align-items-center p-5">
+                        <div class="modal-header border-0 position-relative w-100">
+                          <button type="button" class="btn-close position-absolute top-0 end-0 gray-bg"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="d-flex flex-column">
+                            <img src="assets/img/snapshot-portfolio.png" class="w-100" alt="project-0-preview">
+                            <div class="container-fluid p-1">
+                              <div class="row my-4">
+                                <h2 class="blue col-8 heading-modal">Keeping track of hundreds of
+                                  components</h2>
+                                <div class="col-4 btn-group gap-3">
+
+                                  <button type="button"
+                                    class="d-flex flex-grow-0 btn btn-modal live btn-success rounded position-relative pe-4">See
+                                    live</button>
+                                  <button type="button"
+                                    class="d-flex flex-grow-1 justify-content-center align-items-center btn btn-modal source btn-success rounded position-relative pe-4 py-0">See
+                                    source</button>
+                                </div>
+                              </div>
+                            </div>
+                            <ul class="d-flex row gap-2 mt-2 mb-4 justify-content-center">
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Codekit</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                GitHub</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                JavaScript</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Bootstrap</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Terminal</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Codepen</li>
+                            </ul>
+                          </div>
+                          <p class="supporting-text blue">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                            1500s, when an unknown printer took a galley of type and scrambled it 1960s with the
+                            releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it 1960s with the relea</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card-wrapper d-flex flex-column align-items-center justify-content-center col col-sm-6 col-md-5 col-lg-4 mx-sm-2 mx-xl-5 col-xl-3 mb-5">
+            <div class="card project-card position-relative border border-50">
+              <img src="assets/img/img-placeholder.png" class="card-img-top h-100" alt="...">
+              <div class="card-body position-absolute bottom-0 bg-white border border-top-0 rounded lh-base w-100">
+                <div class="col align-items-center d-flex flex-column">
+                  <h3 class="card-title px-4">Multi-Post Stories Gain+Glory</h3>
+                  <div class="row mt-4 my-4">
+                    <ul class="d-flex row gap-2 my-2 justify-content-center">
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        Ruby on Rails</li>
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        CSS</li>
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        JavaScript</li>
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        HTML</li>
+                    </ul>
+                  </div>
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#project-0"
+                    class="btn btn-success open-modal">See project</button>
+                  <button type="button" href="#" class="btn btn-success project-link">See project</button>
+                  <div class="modal fade" id="project-0" tabindex="-1" aria-labelledby="Project 1" aria-hidden="true">
+                    <div class="modal-dialog position-absolute">
+                      <div class="modal-content align-items-center p-5">
+                        <div class="modal-header border-0 position-relative w-100">
+                          <button type="button" class="btn-close position-absolute top-0 end-0 gray-bg"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="d-flex flex-column">
+                            <img src="assets/img/snapshot-portfolio.png" class="w-100" alt="project-0-preview">
+                            <div class="container-fluid p-1">
+                              <div class="row my-4">
+                                <h2 class="blue col-8 heading-modal">Keeping track of hundreds of
+                                  components</h2>
+                                <div class="col-4 btn-group gap-3">
+
+                                  <button type="button"
+                                    class="d-flex flex-grow-0 btn btn-modal live btn-success rounded position-relative pe-4">See
+                                    live</button>
+                                  <button type="button"
+                                    class="d-flex flex-grow-1 justify-content-center align-items-center btn btn-modal source btn-success rounded position-relative pe-4 py-0">See
+                                    source</button>
+                                </div>
+                              </div>
+                            </div>
+                            <ul class="d-flex row gap-2 mt-2 mb-4 justify-content-center">
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Codekit</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                GitHub</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                JavaScript</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Bootstrap</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Terminal</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Codepen</li>
+                            </ul>
+                          </div>
+                          <p class="supporting-text blue">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                            1500s, when an unknown printer took a galley of type and scrambled it 1960s with the
+                            releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it 1960s with the relea</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card-wrapper d-flex flex-column align-items-center justify-content-center col col-sm-6 col-md-5 col-lg-4 mx-sm-2 mx-xl-5 col-xl-3 mb-5">
+            <div class="card project-card position-relative border border-50">
+              <img src="assets/img/img-placeholder.png" class="card-img-top h-100" alt="...">
+              <div class="card-body position-absolute bottom-0 bg-white border border-top-0 rounded lh-base w-100">
+                <div class="col align-items-center d-flex flex-column">
+                  <h3 class="card-title px-4">Multi-Post Stories Gain+Glory</h3>
+                  <div class="row mt-4 my-4">
+                    <ul class="d-flex row gap-2 my-2 justify-content-center">
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        Ruby on Rails</li>
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        CSS</li>
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        JavaScript</li>
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        HTML</li>
+                    </ul>
+                  </div>
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#project-0"
+                    class="btn btn-success open-modal">See project</button>
+                  <button type="button" href="#" class="btn btn-success project-link">See project</button>
+                  <div class="modal fade" id="project-0" tabindex="-1" aria-labelledby="Project 1" aria-hidden="true">
+                    <div class="modal-dialog position-absolute">
+                      <div class="modal-content align-items-center p-5">
+                        <div class="modal-header border-0 position-relative w-100">
+                          <button type="button" class="btn-close position-absolute top-0 end-0 gray-bg"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="d-flex flex-column">
+                            <img src="assets/img/snapshot-portfolio.png" class="w-100" alt="project-0-preview">
+                            <div class="container-fluid p-1">
+                              <div class="row my-4">
+                                <h2 class="blue col-8 heading-modal">Keeping track of hundreds of
+                                  components</h2>
+                                <div class="col-4 btn-group gap-3">
+
+                                  <button type="button"
+                                    class="d-flex flex-grow-0 btn btn-modal live btn-success rounded position-relative pe-4">See
+                                    live</button>
+                                  <button type="button"
+                                    class="d-flex flex-grow-1 justify-content-center align-items-center btn btn-modal source btn-success rounded position-relative pe-4 py-0">See
+                                    source</button>
+                                </div>
+                              </div>
+                            </div>
+                            <ul class="d-flex row gap-2 mt-2 mb-4 justify-content-center">
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Codekit</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                GitHub</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                JavaScript</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Bootstrap</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Terminal</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Codepen</li>
+                            </ul>
+                          </div>
+                          <p class="supporting-text blue">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                            1500s, when an unknown printer took a galley of type and scrambled it 1960s with the
+                            releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it 1960s with the relea</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card-wrapper d-flex flex-column align-items-center justify-content-center col col-sm-6 col-md-5 col-lg-4 mx-sm-2 mx-xl-5 col-xl-3 mb-5">
+            <div class="card project-card position-relative border border-50">
+              <img src="assets/img/img-placeholder.png" class="card-img-top h-100" alt="...">
+              <div class="card-body position-absolute bottom-0 bg-white border border-top-0 rounded lh-base w-100">
+                <div class="col align-items-center d-flex flex-column">
+                  <h3 class="card-title px-4">Multi-Post Stories Gain+Glory</h3>
+                  <div class="row mt-4 my-4">
+                    <ul class="d-flex row gap-2 my-2 justify-content-center">
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        Ruby on Rails</li>
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        CSS</li>
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        JavaScript</li>
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        HTML</li>
+                    </ul>
+                  </div>
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#project-0"
+                    class="btn btn-success open-modal">See project</button>
+                  <button type="button" href="#" class="btn btn-success project-link">See project</button>
+                  <div class="modal fade" id="project-0" tabindex="-1" aria-labelledby="Project 1" aria-hidden="true">
+                    <div class="modal-dialog position-absolute">
+                      <div class="modal-content align-items-center p-5">
+                        <div class="modal-header border-0 position-relative w-100">
+                          <button type="button" class="btn-close position-absolute top-0 end-0 gray-bg"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="d-flex flex-column">
+                            <img src="assets/img/snapshot-portfolio.png" class="w-100" alt="project-0-preview">
+                            <div class="container-fluid p-1">
+                              <div class="row my-4">
+                                <h2 class="blue col-8 heading-modal">Keeping track of hundreds of
+                                  components</h2>
+                                <div class="col-4 btn-group gap-3">
+
+                                  <button type="button"
+                                    class="d-flex flex-grow-0 btn btn-modal live btn-success rounded position-relative pe-4">See
+                                    live</button>
+                                  <button type="button"
+                                    class="d-flex flex-grow-1 justify-content-center align-items-center btn btn-modal source btn-success rounded position-relative pe-4 py-0">See
+                                    source</button>
+                                </div>
+                              </div>
+                            </div>
+                            <ul class="d-flex row gap-2 mt-2 mb-4 justify-content-center">
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Codekit</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                GitHub</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                JavaScript</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Bootstrap</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Terminal</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Codepen</li>
+                            </ul>
+                          </div>
+                          <p class="supporting-text blue">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                            1500s, when an unknown printer took a galley of type and scrambled it 1960s with the
+                            releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it 1960s with the relea</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card-wrapper d-flex flex-column align-items-center justify-content-center col col-sm-6 col-md-5 col-lg-4 mx-sm-2 mx-xl-5 col-xl-3 mb-5">
+            <div class="card project-card position-relative border border-50">
+              <img src="assets/img/img-placeholder.png" class="card-img-top h-100" alt="...">
+              <div class="card-body position-absolute bottom-0 bg-white border border-top-0 rounded lh-base w-100">
+                <div class="col align-items-center d-flex flex-column">
+                  <h3 class="card-title px-4">Multi-Post Stories Gain+Glory</h3>
+                  <div class="row mt-4 my-4">
+                    <ul class="d-flex row gap-2 my-2 justify-content-center">
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        Ruby on Rails</li>
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        CSS</li>
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        JavaScript</li>
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        HTML</li>
+                    </ul>
+                  </div>
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#project-0"
+                    class="btn btn-success open-modal">See project</button>
+                  <button type="button" href="#" class="btn btn-success project-link">See project</button>
+                  <div class="modal fade" id="project-0" tabindex="-1" aria-labelledby="Project 1" aria-hidden="true">
+                    <div class="modal-dialog position-absolute">
+                      <div class="modal-content align-items-center p-5">
+                        <div class="modal-header border-0 position-relative w-100">
+                          <button type="button" class="btn-close position-absolute top-0 end-0 gray-bg"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="d-flex flex-column">
+                            <img src="assets/img/snapshot-portfolio.png" class="w-100" alt="project-0-preview">
+                            <div class="container-fluid p-1">
+                              <div class="row my-4">
+                                <h2 class="blue col-8 heading-modal">Keeping track of hundreds of
+                                  components</h2>
+                                <div class="col-4 btn-group gap-3">
+
+                                  <button type="button"
+                                    class="d-flex flex-grow-0 btn btn-modal live btn-success rounded position-relative pe-4">See
+                                    live</button>
+                                  <button type="button"
+                                    class="d-flex flex-grow-1 justify-content-center align-items-center btn btn-modal source btn-success rounded position-relative pe-4 py-0">See
+                                    source</button>
+                                </div>
+                              </div>
+                            </div>
+                            <ul class="d-flex row gap-2 mt-2 mb-4 justify-content-center">
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Codekit</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                GitHub</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                JavaScript</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Bootstrap</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Terminal</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Codepen</li>
+                            </ul>
+                          </div>
+                          <p class="supporting-text blue">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                            1500s, when an unknown printer took a galley of type and scrambled it 1960s with the
+                            releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it 1960s with the relea</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card-wrapper d-flex flex-column align-items-center justify-content-center col col-sm-6 col-md-5 col-lg-4 mx-sm-2 mx-xl-5 col-xl-3 mb-5">
+            <div class="card project-card position-relative border border-50">
+              <img src="assets/img/img-placeholder.png" class="card-img-top h-100" alt="...">
+              <div class="card-body position-absolute bottom-0 bg-white border border-top-0 rounded lh-base w-100">
+                <div class="col align-items-center d-flex flex-column">
+                  <h3 class="card-title px-4">Multi-Post Stories Gain+Glory</h3>
+                  <div class="row mt-4 my-4">
+                    <ul class="d-flex row gap-2 my-2 justify-content-center">
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        Ruby on Rails</li>
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        CSS</li>
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        JavaScript</li>
+                      <li
+                        class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                        HTML</li>
+                    </ul>
+                  </div>
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#project-0"
+                    class="btn btn-success open-modal">See project</button>
+                  <button type="button" href="#" class="btn btn-success project-link">See project</button>
+                  <div class="modal fade" id="project-0" tabindex="-1" aria-labelledby="Project 1" aria-hidden="true">
+                    <div class="modal-dialog position-absolute">
+                      <div class="modal-content align-items-center p-5">
+                        <div class="modal-header border-0 position-relative w-100">
+                          <button type="button" class="btn-close position-absolute top-0 end-0 gray-bg"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="d-flex flex-column">
+                            <img src="assets/img/snapshot-portfolio.png" class="w-100" alt="project-0-preview">
+                            <div class="container-fluid p-1">
+                              <div class="row my-4">
+                                <h2 class="blue col-8 heading-modal">Keeping track of hundreds of
+                                  components</h2>
+                                <div class="col-4 btn-group gap-3">
+
+                                  <button type="button"
+                                    class="d-flex flex-grow-0 btn btn-modal live btn-success rounded position-relative pe-4">See
+                                    live</button>
+                                  <button type="button"
+                                    class="d-flex flex-grow-1 justify-content-center align-items-center btn btn-modal source btn-success rounded position-relative pe-4 py-0">See
+                                    source</button>
+                                </div>
+                              </div>
+                            </div>
+                            <ul class="d-flex row gap-2 mt-2 mb-4 justify-content-center">
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Codekit</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                GitHub</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                JavaScript</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Bootstrap</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Terminal</li>
+                              <li
+                                class="badge tool px-3 py-2  d-flex flex-shrink-1 justify-content-center gray-bg blue col-4 align-items-center">
+                                Codepen</li>
+                            </ul>
+                          </div>
+                          <p class="supporting-text blue">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                            1500s, when an unknown printer took a galley of type and scrambled it 1960s with the
+                            releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                            took a galley of type and scrambled it 1960s with the relea</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section id="about">
+      <div class="container-fluid px-1 px-sm-5 align-items-center justify-content-center d-flex flex-column">
+        <h2 class="text-capitalize text-center fw-bold my-2 pt-5 blue">about me</h2>
+        <p class="supporting-text blue text-center my-4 col col-sm-8"> I can help you build a product , feature or
+          website Look
+          through some of my work and experience! If you like what you see and have a project you need coded,
+          don’t hesitate to contact me.</p>
+        <a href="#" class="btn btn-success">Get my Resume</a>
+        <div class="row align-items-stretch justify-content-center text-center mb-3 mt-5">
+
+          <div
+            class="card-wrapper col col-sm-6 col-md-5 col-lg-4 mx-sm-2 mx-xl-5 col-xl-3 d-flex flex-column align-items-center justify-content-center col mb-5">
+            <div class="card about-card border gray-bg d-flex justify-content-center align-items-center h-100">
+              <div class="icon-elipse bg-white border-50 mt-5 ">
+                <img src="assets/img/icon-language.png" class="card-img-top" alt="programming-languages">
+              </div>
+              <div class="card-title pt-4">
+                <h3>Languages</h3>
+              </div>
+              <div class="card-body justify-content-center d-flex border border-top-0 rounded lh-base w-100">
+                <ul class="row justify-content-center align-items-center gap-2 me-2">
+                  <li
+                    class="tool px-2 flex-grow-0 green bg-white badge tool py-2 d-flex justify-content-center gray-bg blue col-4 align-items-center">
+                    JavaScript</li>
+                  <li
+                    class="tool px-2 flex-grow-0 green bg-white badge tool py-2 d-flex justify-content-center gray-bg blue col-4 align-items-center">
+                    Ruby</li>
+                  <li
+                    class="tool px-2 flex-grow-0 green bg-white badge tool py-2 d-flex justify-content-center gray-bg blue col-4 align-items-center">
+                    CSS</li>
+                  <li
+                    class="tool px-2 flex-grow-0 green bg-white badge tool py-2 d-flex justify-content-center gray-bg blue col-4 align-items-center">
+                    HTML</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card-wrapper col col-sm-6 col-md-5 col-lg-4 mx-sm-2 mx-xl-5 col-xl-3 d-flex flex-column align-items-center justify-content-center col mb-5">
+            <div class="card about-card border gray-bg d-flex justify-content-center align-items-center h-100">
+              <div class="icon-elipse bg-white border-50 mt-5 ">
+                <img src="assets/img/icon-frameworks.png" class="card-img-top" alt="frameworks">
+              </div>
+              <div class="card-title pt-4">
+                <h3>Framework</h3>
+              </div>
+              <div class="card-body justify-content-center d-flex border border-top-0 rounded lh-base w-100">
+                <ul class="row justify-content-center align-items-center gap-2 me-2">
+                  <li
+                    class="tool px-2 flex-grow-0 green bg-white badge tool py-2 d-flex justify-content-center gray-bg blue col-4 align-items-center">
+                    React.js</li>
+                  <li
+                    class="tool px-2 flex-grow-0 green bg-white badge tool py-2 d-flex justify-content-center gray-bg blue col-4 align-items-center">
+                    Ruby on Rails</li>
+                  <li
+                    class="tool px-2 flex-grow-0 green bg-white badge tool py-2 d-flex justify-content-center gray-bg blue col-4 align-items-center">
+                    RSpec</li>
+                  <li
+                    class="tool px-2 flex-grow-0 green bg-white badge tool py-2 d-flex justify-content-center gray-bg blue col-4 align-items-center">
+                    Capybara</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card-wrapper col col-sm-6 col-md-5 col-lg-4 mx-sm-2 mx-xl-5 col-xl-3 d-flex flex-column align-items-center justify-content-center col mb-5">
+            <div class="card about-card border gray-bg d-flex justify-content-center align-items-center h-100">
+              <div class="icon-elipse bg-white border-50 mt-5 ">
+                <img src="assets/img/icon-skills.png" class="card-img-top" alt="skills">
+              </div>
+              <div class="card-title pt-4">
+                <h3>Skills</h3>
+              </div>
+              <div
+                class="card-body justify-content-center d-flex align-items-center border border-top-0 rounded lh-base w-100">
+                <ul class="row justify-content-center align-items-center gap-2 me-2">
+                  <li
+                    class="tool px-2 flex-grow-0 green bg-white badge tool py-2 d-flex justify-content-center gray-bg blue col-4 align-items-center">
+                    Database Management</li>
+                  <li
+                    class="tool px-2 flex-grow-0 green bg-white badge tool py-2 d-flex justify-content-center gray-bg blue col-4 align-items-center">
+                    Version Control</li>
+                  <li
+                    class="tool px-2 flex-grow-0 green bg-white badge tool py-2 d-flex justify-content-center gray-bg blue col-4 align-items-center">
+                    CLI</li>
+                  <li
+                    class="tool px-2 flex-grow-0 green bg-white badge tool py-2 d-flex justify-content-center gray-bg blue col-4 align-items-center">
+                    Web Development</li>
+                  <li
+                    class="tool px-2 flex-grow-0 green bg-white badge tool py-2 d-flex justify-content-center gray-bg blue col-4 align-items-center">
+                    API Design</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="mb-5 mt-2 px-5 py-2 d-flex flex-column justify-content-center align-items-center">
+      <div class="container row justify-content-center align-items-center">
+        <h2 class="text-capitalize text-center fw-bold my-3 py-3 blue align-self-start col-md-6 col">I'm always
+          interested in
+          hearing about new projects, so if you'd like to chat please get in touch.</h2>
+        <form class="col-md-5 flex-end align-self-end ps-md-5 d-flex d-md-block flex-column align-items-center"
+          action="https://formspree.io/f/xyyadldd" method="POST">
+          <input type="text" name="fullname" aria-label="Full Name" class="form-control mb-3" id="fullname"
+            placeholder="Full name" required maxlength="30">
+          <input type="email" name="email" class="form-control mb-3" id="email" aria-label="Email" placeholder="Email"
+            required>
+          <textarea class="form-control mb-3" name="message" placeholder="Hey I’d like to connect to..." id="message"
+            aria-label="Message" required maxlength="500"></textarea>
+          <button type="submit" class="btn btn-success">Get in Touch</button>
+        </form>
+      </div>
+      <img src="assets/img/contact-form-img.png" class="contact-form-img" alt="Contact form illustration">
+    </section>
+  </main>
+  <div class="container-fluid">
+    <footer id="footer" class="d-flex flex-wrap flex-column align-items-center py-3 my-4 justify-content-center">
+      <div class="social social-header">
+        <ul class="d-flex flex-row gap-4 me-4 pt-2">
+          <li class="social-icon">
+            <a href="#"><img src="assets/img/icons/twitter.svg" alt="Twitter"></a>
+          </li>
+          <li class="social-icon">
+            <a href="#"><img src="assets/img/icons/Linkedin icon.svg" alt="LinkedIn"></a>
+          </li>
+          <li class="social-icon">
+            <a href="#"><img src="assets/img/icons/medium.svg" alt="Medium"></a>
+          </li>
+          <li class="social-icon">
+            <a href="#"><img src="assets/img/icons/github.svg" alt="GitHub"></a>
+          </li>
+          <li class="social-icon">
+            <a href="#"><img src="assets/img/icons/angellist.svg" alt="Angellist"></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
